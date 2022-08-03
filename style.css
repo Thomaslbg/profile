@@ -1,0 +1,210 @@
+/* font and color*/
+
+body {
+  font-family: Roboto;
+  color: #227C9D;
+  font-weight: 500;
+}
+
+
+h1{
+	color: #FE6D73;
+
+	font-family: montserrat;
+}
+
+h2{
+	color: #FE6D73;
+	font-size: 18;
+	font-family: montserrat
+}
+
+a {
+  text-decoration: none;
+  color: #17C3B2;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #FFCB77;
+ }
+
+
+div {
+  display: block;
+}
+
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.img-circle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+  width: 25%;
+  border-radius: 50%;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.card {
+  background: #FEF9EF;
+  padding: 30px;
+  margin-top: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #5a6363;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  opacity: 0.95;
+}
+
+
+
+p{
+	font-family: Roboto
+}
+
+
+
+button {
+  color: #FE6D73;
+  letter-spacing: 2px;
+  word-spacing: normal;
+  text-align: center;
+  cursor: default;
+  margin: 8px;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.button-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+
+.button-text:hover:after {
+  transform: translate(-10px, -10px);
+  width: calc(100% - 10px);
+}
+
+.button-text:after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #FFCB77;
+  content: "";
+  z-index: -1;
+  transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+}
+
+/*
+
+
+/* Page styling -- Not needed to replicate button visuals. */
+html,
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto Mono", monospace;
+} */
+
+button {
+  margin: 50px;
+  font-family: inherit;
+}
+/* End of Page styling */
+
+
+/* Fill button styling */
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid 17C3B2;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #FFCB77;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */
+.v-effect-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.v-effect-link li {
+  display: inline-block;
+  min-width: 5em;
+  margin: 0 0.5em;
+}
+.v-effect-link a {
+  text-decoration: none;
+  display: block;
+  font-family:Arial;
+  position: relative;
+  color: #17C3B2;
+  padding:.5em 0
+}
+.v-effect-link a:hover {
+  color: #FFCB77;
+}
+
+.v-effect-link a:hover:before {
+  left: 0;
+  width: 100%;
+}
+.v-effect-link a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: .5px;
+  background-color: #FFCB77;
+  bottom: calc(-1px);
+  right: 0;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
